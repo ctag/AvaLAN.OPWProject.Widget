@@ -75,7 +75,7 @@ var images = [
             <polygon points="63,310 83,290 147,290 167,310 147,330 83,330" style="fill: #00ff00;"/>
             <polygon points="150,206 169,187 190,207 190,287  170,307 150,287" style="fill: #00ff00;" />
         </svg>
-    </img>`
+    </img>`,
     `<img id="7" name="digitalnumber">
         <svg width="200" height="400">
             <polygon points="40,80 60,60 80,80 80,160 60,180 40,160" style="fill: #003300;" />
