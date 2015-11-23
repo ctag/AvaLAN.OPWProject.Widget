@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
 <html>
     <head>
+		<meta charset="UTF-8">
         <title>Billboard Widget</title>
         <link href="style.css" type="stylesheet" />
-        <script src="widgetlogic.js" />
+        <script src="widgetlogic.js"></script>
     </head>
     
-    <body onload="init()">
-		
+    <body>
 		<input id="dol" type="number" />
         <input id="tens" type="number" />
         <input id="ones" type="number" />
@@ -31,9 +30,15 @@
                 </div>
 
                 <script type="text/javascript" >
-                    initdigits("dol", "tens", "ones");    
+                    //initdigits("dol", "tens", "ones");    
                 </script>
             </div>
         </div>
     </body>
+    
+    <script>
+		// Make sure page is totally loaded before calling function.
+		window.onload = init();
+	</script>
+    
 </html>
