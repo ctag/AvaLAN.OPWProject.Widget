@@ -1,3 +1,12 @@
+
+// Global Variables
+var dolval;
+var tensval;
+var onesval;
+var doldiv;
+var tensdiv;
+var onesdiv;
+
 var images = [
     `<img id="0" name="digitalnumber">
         <svg width="200" height="400">
@@ -113,26 +122,25 @@ var images = [
 
 function init()
 {
-    //Change what the numbers are initialized to here
-    var dolval = document.getElementById("dol");
-    var tensval = document.getElementById("tens");
-    var onesval = document.getElementById("ones");
+    // Collect elements for global variables, 
+    // this saves time by only doing it once on page load.
+    dolval = document.getElementById("dol");
+    tensval = document.getElementById("tens");
+    onesval = document.getElementById("ones");
+    doldiv = document.getElementById("dollar");
+    tensdiv = document.getElementById("centtens");
+    onesdiv = document.getElementById("centones");
+    
+    // Push initial values to page.
     dolval.value = 1;
     tensval.value = 2;
     onesval.value = 3;
+    doldiv.innerHTML = doldiv.innerHTML + images[dolval.value];
+    tensdiv.innerHTML = tensdiv.innerHTML + images[tensval.value];
+    onesdiv.innerHTML = onesdiv.innerHTML + images[onesval.value];
 }
 
 function initdigits()
 {
-    //passes digit values on initialization and appends image code to div.dollar/tens/cents
-    var dolval = document.getElementById("dol");
-    var tensval = document.getElementById("tens");
-    var onesval = document.getElementById("ones");
-    var doldiv = document.getElementById("dollar");
-    var tensdiv = document.getElementById("centtens");
-    var onesdiv = document.getElementById("centones");
-    
-    doldiv.innerHTML = doldiv.innerHTML + images[dolval];
-    tensdiv.innerHTML = tensdiv.innerHTML + images[tensval];
-    onesdiv.innerHTML = onesdiv.innerHTML + images[onesval];
+    // Shouldn't be needed, but I'll leave it here.
 }
