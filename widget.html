@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Billboard Widget</title>
+        <link href="style.css" type="stylesheet" />
+        <script src="widgetlogic.js" />
+        <input id="dol" type="number" />
+        <input id="tens" type="number" />
+        <input id="ones" type="number" />
+    </head>
+    
+    <body onload="init()">
+        <div class="container">
+            <div class="padded">
+                <div id="dollar">
+                    <input type="button" onclick="increment(dol)" />
+                    <input type="button" onclick="decrement(dol)" />
+                </div>
+
+                <div id="centtens">
+                    <input type="button" onclick="increment(tens)" />
+                    <input type="button" onclick="decrement(tens)" />
+                </div>
+
+                <div id="centones">
+                    <input type="button" onclick="increment(ones)" />
+                    <input type="button" onclick="decrement(ones)" />
+                </div>
+
+                <script type="text/javascript" >
+                    initdigits("dol", "tens", "ones");    
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

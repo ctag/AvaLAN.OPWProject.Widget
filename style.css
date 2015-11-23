@@ -1,0 +1,32 @@
+body{
+    margin:lem;
+    background-color: #333;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+div.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900;
+    background-color: darkgray;
+}
+
+div.padded{
+    padding: 0.8em;
+}
+
+/*
+div.dollar{
+    
+}
+
+div.centtens{
+    
+}
+
+div.centones{
+    
+}
+*/
