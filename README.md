@@ -1,0 +1,2 @@
+# AvaLAN.OPWProject.Widget
+Widget
