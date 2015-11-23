@@ -111,8 +111,7 @@ var images = [
     </img>`
 ]
 
-function init()
-{
+function init(){
     //Change what the numbers are initialized to here
     var dolval = document.getElementById("dol");
     var tensval = document.getElementById("tens");
@@ -122,8 +121,7 @@ function init()
     onesval.value = 3;
 }
 
-function initdigits()
-{
+function initdigits(){
     //passes digit values on initialization and appends image code to div.dollar/tens/cents
     var dolval = document.getElementById("dol");
     var tensval = document.getElementById("tens");
@@ -135,4 +133,13 @@ function initdigits()
     doldiv.innerHTML = doldiv.innerHTML + images[dolval];
     tensdiv.innerHTML = tensdiv.innerHTML + images[tensval];
     onesdiv.innerHTML = onesdiv.innerHTML + images[onesval];
+}
+
+function increment(digit){
+    
+}
+
+function decrement(digit){
+    
+}
 }
